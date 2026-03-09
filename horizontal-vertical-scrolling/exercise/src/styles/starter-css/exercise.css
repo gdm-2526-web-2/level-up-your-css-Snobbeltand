@@ -1,0 +1,25 @@
+/**
+* CSS file with some starter css for exercises.
+*/
+
+ul li {
+  list-style: none;
+}
+
+.swiper,
+.carousel {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+
+  .swiper__item,
+  .carousel__item {
+    flex: 0 0 200px;
+  }
+
+  .swiper__image,
+  .carousel__image {
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+  }
+}
