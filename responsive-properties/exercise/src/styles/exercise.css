@@ -1,3 +1,6 @@
 .hero {
-
+  height: 20vh;
+}
+.hero--updated {
+  height: 20svh;
 }

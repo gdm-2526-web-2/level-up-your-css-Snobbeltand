@@ -1,10 +1,26 @@
 /* Waarom zijn focus-stijlen belangrijk? Niet uitzetten! */
 
 /* Focus-within - Geef het label een andere kleur! */
-
+label:focus-within {
+  color: orangered;
+}
+input:focus {
+  outline: 4px dotted orangered;
+}
 
 /* Tonen dat een veld nog niet is ingevuld met placeholder-shown */
+
+input:placeholder-shown {
+  background-color: maroon;
+}
 
 /* Placeholder shown? Maak een form label animatie: https://blog.surjithctly.in/creating-a-floating-label-input-form-using-tailwindcss-no-javascript  */
 
 /* Focus-visible - Maak de focus outline duidelijker! */
+.focus-only:focus {
+  outline: 4.8px dotted orangered;
+}
+
+.focus-visible-only:focus-visible {
+  outline: 6px dashed maroon;
+}

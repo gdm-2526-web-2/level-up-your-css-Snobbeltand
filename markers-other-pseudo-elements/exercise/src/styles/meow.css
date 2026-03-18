@@ -1,0 +1,18 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  &::before {
+    content: "";
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    background-color: hsl(120, 57%, 30%);
+    position: absolute;
+    z-index: -3000;
+  }
+  &::after {
+    content: "wuff";
+  }
+}

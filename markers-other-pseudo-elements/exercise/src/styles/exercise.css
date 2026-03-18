@@ -5,7 +5,16 @@
 *
 * Geef de bullet points een andere vorm dan de ingebouwde vormen
 */
-
+li {
+  list-style-type: lower-greek;
+}
+li::marker {
+  color: red;
+  content: "🐱";
+}
 /**
 * Stijl de selectie van tekst.
 */
+p::selection {
+  color: red;
+}
