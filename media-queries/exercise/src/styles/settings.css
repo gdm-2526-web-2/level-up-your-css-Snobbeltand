@@ -1,0 +1,12 @@
+.card {
+  @media screen and (prefers-color-scheme: light) {
+    background-color: hsl(0, 0%, 93%);
+  }
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: hsl(0, 0%, 19%);
+  }
+}
+
+.light-mode {
+  background-color: hsl(0, 0%, 93%);
+}

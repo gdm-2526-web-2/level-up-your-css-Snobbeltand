@@ -1,1 +1,38 @@
 /**/
+
+:root {
+  --primary: #d9d9d9;
+  --secondary: #73d768;
+  --print: #ffffff;
+  @media (800px < width < 1200px) {
+    --pico-color: green;
+  }
+}
+
+body {
+  background-color: var(--primary);
+
+  @media screen and (min-width: 1000px) {
+    background-color: var(--secondary);
+  }
+}
+@media print {
+  .print-hide {
+    display: none;
+  }
+}
+
+.touch-only {
+  display: none;
+
+  @media screen and (hover: none) {
+    display: block;
+  }
+}
+.no-touch-only {
+  display: none;
+
+  @media screen and (hover: hover) and (pointer: fine) {
+    display: block;
+  }
+}
